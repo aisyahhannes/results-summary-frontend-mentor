@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --light-red: #ff5757;
+    --orangey-yellow: #ffb01f;
+    --green-teal: #00bd91;
+    --cobalt-blue: #1125d4;
+
+    --light-slate-blue: #7857ff;
+    --light-royal-blue: #2e2be9;
+    --violet-blue: #4e21ca;
+    --persian-blue: #2421ca;
+
+    --white: #ffffff;
+    --pale-blue: #ebf1ff;
+    --light-lavender: #c8c7ff;
+    --dark-gray-blue: #303b5a;
+}
+
+* {
+    font-family: 'Hanken Grotesk';
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+}
+
+main {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-color: var(--white);
+    border-radius: 30px;
+}
+
+/* Headings and paragraphs */
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+    font-size: 17px;
+    margin: 0;
+}
+
+section {
+    width: 50%;
+    padding: 30px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light-slate-blue);
+    background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 30px;
+    color: var(--light-lavender);
+}
+
+.result h2  {
+    color: white;
+}
+
+.percentage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.percentage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+    
+    /* Mask gradient for fading effect */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.percentage h1  {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.percentage p {
+    font-size: 15px;
+}
+
+
+/* Summary */
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.category-component {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.category-component p {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+
+article {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+article p {
+    font-weight: bold;
+    color: var(--dark-gray-blue);
+}
+
+span {
+    font-weight: bold;
+    color: grey;
+}
+
+.reaction {
+    background-color: rgba(255, 87, 87, 0.05);
+}
+
+.reaction h4 {
+    color: var(--light-red);
+}
+
+.memory {
+    background-color: rgba(255, 176, 31, 0.05);
+}
+
+.memory h4 {
+    color: var(--orangey-yellow);
+}
+
+.verbal {
+    background-color: rgba(0, 189, 145, 0.05);
+}
+
+.verbal h4 {
+    color: var(--green-teal);
+}
+
+.visual {
+    background-color: rgba(17, 37, 212, 0.05);
+}
+
+.visual h4 {
+    color: var(--cobalt-blue);
+}
+
+.category {
+    display: flex;
+    gap: 10px;
+}
+
+.category-percentage {
+    display: flex;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+}
+
+
