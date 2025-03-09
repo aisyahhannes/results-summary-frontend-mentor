@@ -18,15 +18,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
-
-### What I learned
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- Solution URL: [Solution URL](https://github.com/aisyahhannes/results-summary-frontend-mentor)
+- Live Site URL: [Live site URL](https://aisyahhannes.github.io/results-summary-frontend-mentor)
